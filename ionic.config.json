@@ -1,0 +1,7 @@
+{
+  "name": "abruzzoTour",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
