@@ -1,0 +1,28 @@
+<ion-content fullscreen>
+  <div class="wrap">
+    <div class="wrap_icon-back">
+      <img src="../../../../assets/icons/arrow.svg" routerLink="/tabs/profile/review" />
+    </div>
+    <div class="wrap_title-container">
+      <div class="wrap_title-container_text">Modifica la tua recensione!</div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-container" [formGroup]="reviewForm">
+      <div class="form-container_input-wrap">
+        <div class="form-container_input-wrap_title">
+          <app-input formControlName="reviewTitle" placeholder="Titolo"></app-input>
+        </div>
+        <ion-textarea formControlName="description" placeholder="Descrizione" type="text" rows="11">
+        </ion-textarea>
+      </div>
+
+      <!-- BUTTON -->
+      <div class="form-container_button">
+        <app-button color="fern-green" [shadow]="true" (click)="onConfirm()">
+          Modifica
+        </app-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,42 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Import Font */
+@import "/src/assets/style/fonts/roboto.scss";
+
+/* CSS for Loader */
+@import "../src/assets/style/components/loader";
+
+/* CSS for Toaster */
+@import "../src/assets/style/components/toaster";
+
+/* Modal css */
+@import "/src/assets/style/modal/modals.scss";
+
+/* Alert css */
+@import "/src/assets/style/alert/alerts.scss";
+
+/* Swiper */
+@import "~swiper/scss";
+@import "~@ionic/angular/css/ionic-swiper";
+
+/* Leaflet */
+@import "~leaflet/dist/leaflet.css";
+@import "../src/assets/style/components/map";
+
+/* Global */
+* {
+  font-family: "Roboto", sans-serif !important;
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+}
+
+ion-content {
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

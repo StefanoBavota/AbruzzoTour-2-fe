@@ -1,0 +1,26 @@
+.searh-bar {
+  background-color: var(--granny-smith);
+  --icon-color: var(--black) !important;
+  --background: var(--light-green);
+  color: var(--black);
+  --border-radius: 20px;
+}
+
+.list {
+  background: var(--granny-smith);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+
+  &_container {
+    margin-top: 2%;
+    min-width: 100%;
+
+    &_card {
+      margin: 0% 4% 3%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<ion-header class="ion-no-border">
+  <ion-searchbar class="searh-bar" debounce="250" (ionInput)="_ionChange($event)"></ion-searchbar>
+</ion-header>
+<ion-content>
+  <ion-list class="list">
+    <div class="list_container">
+      <div class="list_container_card" *ngFor="let review of reviewsByUserIdList" (click)="onReviewClick(review)">
+        <app-list-card imgLink="{{review.imgLink}}" title="{{review.title}}" reviewTitle="{{review.reviewTitle}}"
+          shortDescription="{{review.description}}">
+        </app-list-card>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

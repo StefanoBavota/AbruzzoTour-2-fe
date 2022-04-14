@@ -1,0 +1,16 @@
+<ion-content class="container">
+  <div class="container_list">
+    <div class="container_list_card" *ngFor="let travel of travelList" (click)="presentModal(travel)">
+      <app-travel-card [travel]="travel"></app-travel-card>
+    </div>
+
+    <div class="container_list_empty" *ngIf="travelList.length === 0">
+      <div class="container_list_empty_text">
+        <p>Ops... non ci sono viaggi, torna alla home e scegline uno!</p>
+      </div>
+      <div class="container_list_empty_btn">
+        <app-button color="white" routerLink="">Home</app-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

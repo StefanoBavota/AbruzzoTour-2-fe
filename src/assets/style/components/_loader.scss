@@ -1,0 +1,13 @@
+.loader-style{
+  background: rgba(var(--light-grey-rgba));
+  --spinner-color: var(--granny-smith);
+  .loading-wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+ion-spinner {
+  width: 5em;
+  height: 5em;
+}

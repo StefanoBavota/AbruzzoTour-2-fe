@@ -1,0 +1,15 @@
+<ion-header class="ion-no-border">
+  <ion-searchbar class="searh-bar" debounce="250" (ionInput)="_ionChange($event)"></ion-searchbar>
+</ion-header>
+<ion-content>
+  <ion-list class="list">
+    <div class="list_container">
+      <div class="list_container_card" *ngFor="let path of pathList" (click)="onPathSelect(path.pathId)">
+        <app-list-card imgLink="{{path.imgLink}}" title="{{path.title}}" time="{{path.time}}"
+          shortDescription="{{path.shortDescription}}" tagName="{{path.tagName}}" tagColor="{{path.tagColor}}"
+          tagIcon="{{path.tagIcon}}">
+        </app-list-card>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

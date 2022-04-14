@@ -1,0 +1,15 @@
+.container {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+  ion-textarea {
+    width: 100%;
+    height: 15em !important;
+    padding: 0 23px 0 23px !important;
+    color: var(--black);
+    border-radius: 15px;
+    background-color: var(--white);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,47 @@
+<ion-content>
+  <div class="container">
+    <!-- AVATAR -->
+    <div class="container_avatar">
+      <app-avatar initials="{{initials}}"></app-avatar>
+    </div>
+
+    <!-- CARD -->
+    <div class="container_info">
+      <div class="container_info_card">
+        <div class="container_info_card_input-half">
+          <div class="left-item">
+            <app-input placeholder="{{userLogged?.firstName}}" type="text" [readOnly]=true></app-input>
+          </div>
+          <div class="right-item">
+            <app-input placeholder="{{userLogged?.lastName}}" type="text" [readOnly]=true></app-input>
+          </div>
+        </div>
+
+        <div class="container_info_card_input">
+          <app-input placeholder="{{userLogged?.email}}" type="text" [readOnly]=true></app-input>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="container_bot">
+      <div class="container_bot_btn-group">
+        <div class="container_bot_btn-group_button">
+          <app-button color="fern-green" (click)="onChangePassword()">
+            Cambia password
+          </app-button>
+        </div>
+        <div class="container_bot_btn-group_button">
+          <app-button color="bud-green" (click)="onReview()">
+            Recensioni
+          </app-button>
+        </div>
+        <div class="container_bot_btn-group_button">
+          <app-button color="light-grey" (click)="onLogout()">
+            Logout
+          </app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

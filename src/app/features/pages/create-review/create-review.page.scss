@@ -1,0 +1,62 @@
+.wrap {
+  background: var(--granny-smith);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+
+  &_icon-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &_title-container {
+    text-align: center;
+    align-items: center;
+
+    &_text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 33px;
+  width: 100%;
+  height: 60%;
+
+  &_input-wrap {
+    position: relative;
+
+    &_title {
+      padding-bottom: 5%;
+    }
+
+    ion-textarea {
+      width: 100%;
+      height: 15em !important;
+      padding: 0 23px 0 23px !important;
+      color: var(--black);
+      border-radius: 15px;
+      background-color: var(--white);
+      box-sizing: border-box;
+    }
+  }
+
+  &_button {
+    height: 60px;
+  }
+}
